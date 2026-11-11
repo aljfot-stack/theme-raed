@@ -1,0 +1,11 @@
+<section component-id="{{ componentId }}" data-testid="sarab-faq" class="sarab-section container sarab-faq">
+  {% if component.title %}<div class="sarab-section__head"><h2>{{ component.title }}</h2></div>{% endif %}
+  <div class="sarab-faq__list">
+    {% for item in component.items %}
+      <details class="sarab-faq__item">
+        <summary>{{ item.question }}</summary>
+        <p>{{ item.answer }}</p>
+      </details>
+    {% endfor %}
+  </div>
+</section>

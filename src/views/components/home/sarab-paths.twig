@@ -1,0 +1,18 @@
+<section component-id="{{ componentId }}" data-testid="sarab-paths" class="sarab-section container">
+  {% if component.title %}
+  <div class="sarab-section__head">
+    <h2>{{ component.title }}</h2>
+    {% if component.subtitle %}<p>{{ component.subtitle }}</p>{% endif %}
+  </div>
+  {% endif %}
+  <div class="sarab-paths">
+    {% for item in component.items %}
+      <a class="sarab-path" href="{{ item.link ?: '#' }}">
+        {% if item.image %}<img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" width="96" height="96">{% endif %}
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+        <span class="sarab-path__more">{{ item.more ?: 'ابدأ' }} <i class="sicon-arrow-left rtl:inline-block ltr:hidden"></i></span>
+      </a>
+    {% endfor %}
+  </div>
+</section>

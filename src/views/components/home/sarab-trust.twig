@@ -1,0 +1,10 @@
+<section component-id="{{ componentId }}" data-testid="sarab-trust" class="sarab-trust">
+  <div class="container sarab-trust__grid">
+    {% for item in component.items %}
+      <div class="sarab-trust__item">
+        <strong>{{ item.value }}</strong>
+        <span>{{ item.label }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
