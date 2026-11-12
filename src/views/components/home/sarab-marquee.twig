@@ -1,0 +1,13 @@
+<section component-id="{{ componentId }}" data-testid="sarab-marquee" class="sarab-marquee {{ component.style == 'gold' ? 'sarab-marquee--gold' : '' }}" aria-label="{{ component.label ?: 'سراب ستور' }}">
+  <div class="sarab-marquee__track">
+    {% for round in 1..2 %}
+      {% for item in component.items %}
+        {% if item.image %}
+          <img class="sarab-marquee__img" src="{{ item.image }}" alt="{{ round == 1 ? item.text : '' }}" loading="lazy" {% if round == 2 %}aria-hidden="true"{% endif %}>
+        {% elseif item.text %}
+          <span class="sarab-marquee__word" {% if round == 2 %}aria-hidden="true"{% endif %}>{{ item.text }} ✦</span>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</section>

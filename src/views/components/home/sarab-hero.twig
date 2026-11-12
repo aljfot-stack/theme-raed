@@ -1,8 +1,18 @@
-<section component-id="{{ componentId }}" data-testid="sarab-hero" class="sarab-hero">
+<section component-id="{{ componentId }}" data-testid="sarab-hero" class="sarab-hero{% if component.image %} has-image{% endif %}">
+  {% if component.image %}
+    <img class="sarab-hero__bg" src="{{ component.image }}" alt="" loading="eager" fetchpriority="high">
+    <span class="sarab-hero__scrim" aria-hidden="true"></span>
+  {% endif %}
   <div class="container sarab-hero__inner">
-    <div class="sarab-hero__text">
-      {% if component.eyebrow %}<span class="sarab-hero__eyebrow">{{ component.eyebrow }}</span>{% endif %}
-      <h1 class="sarab-hero__title">{{ component.title }}</h1>
+    <div class="sarab-hero__pills sarab-rise">
+      {% if component.eyebrow %}<span class="sarab-pill">{{ component.eyebrow }}</span>{% endif %}
+      {% if component.eyebrow2 %}<span class="sarab-pill">{{ component.eyebrow2 }}</span>{% endif %}
+    </div>
+    <h1 class="sarab-hero__title sarab-rise sarab-rise--2">
+      {{ component.title }}
+      {% if component.title_gold %}<span class="sarab-gold">{{ component.title_gold }}</span>{% endif %}
+    </h1>
+    <div class="sarab-hero__bottom sarab-rise sarab-rise--3">
       {% if component.subtitle %}<p class="sarab-hero__subtitle">{{ component.subtitle }}</p>{% endif %}
       <div class="sarab-hero__actions">
         {% if component.btn_text and component.btn_link %}
@@ -13,10 +23,5 @@
         {% endif %}
       </div>
     </div>
-    {% if component.image %}
-    <div class="sarab-hero__media">
-      <img src="{{ component.image }}" alt="{{ component.title|striptags }}" loading="eager" width="640" height="640">
-    </div>
-    {% endif %}
   </div>
 </section>

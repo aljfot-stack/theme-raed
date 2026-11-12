@@ -1,11 +1,13 @@
-<section component-id="{{ componentId }}" data-testid="sarab-faq" class="sarab-section container sarab-faq">
-  {% if component.title %}<div class="sarab-section__head"><h2>{{ component.title }}</h2></div>{% endif %}
-  <div class="sarab-faq__list">
-    {% for item in component.items %}
-      <details class="sarab-faq__item">
-        <summary>{{ item.question }}</summary>
-        <p>{{ item.answer }}</p>
-      </details>
-    {% endfor %}
+<section component-id="{{ componentId }}" data-testid="sarab-faq" class="sarab-faq">
+  <div class="container sarab-faq__inner">
+    {% if component.title %}<h2 class="sarab-faq__title">{{ component.title }}</h2>{% endif %}
+    <div class="sarab-faq__list">
+      {% for item in component.items %}
+        <details class="sarab-faq__item" {% if loop.first %}open{% endif %}>
+          <summary>{{ item.question }}<span class="sarab-faq__icon" aria-hidden="true"></span></summary>
+          <p>{{ item.answer }}</p>
+        </details>
+      {% endfor %}
+    </div>
   </div>
 </section>

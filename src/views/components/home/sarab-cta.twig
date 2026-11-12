@@ -1,0 +1,8 @@
+<section component-id="{{ componentId }}" data-testid="sarab-cta" class="sarab-cta">
+  <div class="container sarab-cta__inner">
+    <h2>{{ component.title }}{% if component.title_gold %}<span class="sarab-gold">{{ component.title_gold }}</span>{% endif %}</h2>
+    {% if component.btn_text and component.btn_link %}
+      <a class="sarab-btn sarab-btn--gold sarab-btn--lg" href="{{ component.btn_link }}">{{ component.btn_text }}</a>
+    {% endif %}
+  </div>
+</section>

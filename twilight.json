@@ -1160,7 +1160,21 @@
           "labelHTML": null,
           "placeholder": "سطر صغير فوق العنوان",
           "icon": "sicon-format-text-alt",
-          "value": "استوديو سراب",
+          "value": "تصاميم وإعلانات بالذكاء الاصطناعي",
+          "multilanguage": true,
+          "required": false
+        },
+        {
+          "id": "eyebrow2",
+          "key": "82aca046-d4af-4a70-b527-0e210985b956",
+          "type": "string",
+          "format": "text",
+          "label": "سطر صغير ثاني",
+          "description": null,
+          "labelHTML": null,
+          "placeholder": "سطر صغير ثاني",
+          "icon": "sicon-format-text-alt",
+          "value": "عربي · English · اردو",
           "multilanguage": true,
           "required": false
         },
@@ -1174,7 +1188,21 @@
           "labelHTML": null,
           "placeholder": "العنوان",
           "icon": "sicon-format-text-alt",
-          "value": "إعلانات وتصاميم بالذكاء الاصطناعي بجودة سينمائية",
+          "value": "نحوّل فكرتك",
+          "multilanguage": true,
+          "required": false
+        },
+        {
+          "id": "title_gold",
+          "key": "5dcb29ea-a36b-45cb-ad18-3b4148f2746a",
+          "type": "string",
+          "format": "text",
+          "label": "سطر ذهبي تحت العنوان",
+          "description": null,
+          "labelHTML": null,
+          "placeholder": "سطر ذهبي تحت العنوان",
+          "icon": "sicon-format-text-alt",
+          "value": "لإعلان يتحرك",
           "multilanguage": true,
           "required": false
         },
@@ -1188,7 +1216,7 @@
           "labelHTML": null,
           "placeholder": "وصف قصير",
           "icon": "sicon-format-text-alt",
-          "value": "من الفكرة إلى الفيديو الجاهز للنشر، بسرعة وبسعر واضح وبدون شحن.",
+          "value": "إعلانات سينمائية، تصوير منتجات افتراضي، وهوية بصرية للمحلات التجارية والأفراد. كل شيء أونلاين، بدون شحن.",
           "multilanguage": true,
           "required": false
         },
@@ -1253,7 +1281,7 @@
           "key": "e1d43164-3c97-4a52-9a20-45da3be41841",
           "type": "string",
           "format": "image",
-          "label": "صورة جانبية (اختياري)",
+          "label": "صورة خلفية الواجهة (عريضة)",
           "description": null,
           "labelHTML": null,
           "placeholder": "صورة جانبية (اختياري)",
@@ -1285,7 +1313,21 @@
           "labelHTML": null,
           "placeholder": "العنوان",
           "icon": "sicon-format-text-alt",
-          "value": "وش تحتاج؟",
+          "value": "أعمال",
+          "multilanguage": true,
+          "required": false
+        },
+        {
+          "id": "title_gold",
+          "key": "8dfd4b1b-d5b3-4402-8db5-2d39ec5fa3ec",
+          "type": "string",
+          "format": "text",
+          "label": "كلمة ذهبية بعد العنوان",
+          "description": null,
+          "labelHTML": null,
+          "placeholder": "كلمة ذهبية بعد العنوان",
+          "icon": "sicon-format-text-alt",
+          "value": "مميزة",
           "multilanguage": true,
           "required": false
         },
@@ -1299,7 +1341,7 @@
           "labelHTML": null,
           "placeholder": "وصف",
           "icon": "sicon-format-text-alt",
-          "value": "اختر المسار المناسب لنشاطك",
+          "value": "نماذج من خدماتنا الأكثر طلبًا. اختر اللي يناسب نشاطك واطلب مباشرة.",
           "multilanguage": true,
           "required": false
         },
@@ -1423,6 +1465,34 @@
       "is_default": false,
       "fields": [
         {
+          "id": "title",
+          "key": "02f284a2-b77b-4140-adba-4fddefa8eb70",
+          "type": "string",
+          "format": "text",
+          "label": "العنوان",
+          "description": null,
+          "labelHTML": null,
+          "placeholder": "العنوان",
+          "icon": "sicon-format-text-alt",
+          "value": "ليش",
+          "multilanguage": true,
+          "required": false
+        },
+        {
+          "id": "title_gold",
+          "key": "52a546e1-acfb-4d7b-b1f2-b015452f024a",
+          "type": "string",
+          "format": "text",
+          "label": "كلمة ذهبية بعد العنوان",
+          "description": null,
+          "labelHTML": null,
+          "placeholder": "كلمة ذهبية بعد العنوان",
+          "icon": "sicon-format-text-alt",
+          "value": "سراب؟",
+          "multilanguage": true,
+          "required": false
+        },
+        {
           "id": "items",
           "key": "179b24da-882d-4f96-863f-0583748f47d4",
           "type": "collection",
@@ -1483,6 +1553,129 @@
           "required": false,
           "minLength": 1,
           "maxLength": 6
+        }
+      ]
+    },
+    {
+      "key": "6e6cf415-f1b7-4028-8579-470def2205ac",
+      "title": {
+        "en": "Sarab Marquee",
+        "ar": "سراب: شريط متحرك"
+      },
+      "icon": "sicon-arrow-left-right",
+      "path": "home.sarab-marquee",
+      "image": "",
+      "is_default": false,
+      "fields": [
+        {
+          "id": "style",
+          "key": "0bda3092-ace9-4590-84f7-59d2d60d4276",
+          "type": "items",
+          "format": "dropdown-list",
+          "label": "شكل الشريط",
+          "description": null,
+          "labelHTML": null,
+          "icon": "sicon-paint-roller",
+          "selected": [
+            {
+              "label": "ذهبي بكلمات",
+              "value": "gold",
+              "key": "19c915cc-0b24-4c31-a234-989edf684905"
+            }
+          ],
+          "options": [
+            {
+              "label": "ذهبي بكلمات",
+              "value": "gold",
+              "key": "0a860b2e-3df2-4e84-95d2-f1d687d8c89e"
+            },
+            {
+              "label": "داكن (صور أو كلمات)",
+              "value": "dark",
+              "key": "2eec211c-80b9-47a5-86cb-28802ff66920"
+            }
+          ],
+          "source": "Manual",
+          "required": false,
+          "multilanguage": false
+        },
+        {
+          "id": "label",
+          "key": "11e3c4f8-a7ed-4cc2-8212-f80b4048d34a",
+          "type": "string",
+          "format": "text",
+          "label": "وصف الشريط لقارئ الشاشة",
+          "description": null,
+          "labelHTML": null,
+          "placeholder": "وصف الشريط لقارئ الشاشة",
+          "icon": "sicon-format-text-alt",
+          "value": "خدماتنا",
+          "multilanguage": true,
+          "required": false
+        },
+        {
+          "id": "items",
+          "key": "e28ff337-bd89-49ab-94ec-55896844d472",
+          "type": "collection",
+          "format": "collection",
+          "label": "العناصر",
+          "description": null,
+          "labelHTML": null,
+          "item_label": "عنصر",
+          "icon": "sicon-list-add",
+          "value": [
+            {
+              "items.text": "إعلانات سينمائية"
+            },
+            {
+              "items.text": "تصوير منتجات"
+            },
+            {
+              "items.text": "هوية بصرية"
+            },
+            {
+              "items.text": "موشن لوقو"
+            },
+            {
+              "items.text": "حملات موسمية"
+            },
+            {
+              "items.text": "شخصيات كرتونية"
+            }
+          ],
+          "fields": [
+            {
+              "id": "items.text",
+              "key": "43fc5791-5061-4bb4-9b63-3f6f5e81b0fe",
+              "type": "string",
+              "format": "text",
+              "label": "الكلمة",
+              "description": null,
+              "labelHTML": null,
+              "placeholder": "الكلمة",
+              "icon": "sicon-format-text-alt",
+              "value": null,
+              "multilanguage": true,
+              "required": false
+            },
+            {
+              "id": "items.image",
+              "key": "fa088da2-bed1-4b17-b98e-02f4c1caacf6",
+              "type": "string",
+              "format": "image",
+              "label": "صورة (اختياري)",
+              "description": null,
+              "labelHTML": null,
+              "placeholder": "صورة (اختياري)",
+              "icon": "sicon-image",
+              "value": null,
+              "multilanguage": false,
+              "required": false
+            }
+          ],
+          "required": false,
+          "minLength": 1,
+          "maxLength": 16
         }
       ]
     },
@@ -1564,6 +1757,75 @@
           "required": false,
           "minLength": 1,
           "maxLength": 12
+        }
+      ]
+    },
+    {
+      "key": "b568b2b4-8b94-4736-a8a8-d456292f9b7b",
+      "title": {
+        "en": "Sarab Call to Action",
+        "ar": "سراب: دعوة للطلب"
+      },
+      "icon": "sicon-whatsapp",
+      "path": "home.sarab-cta",
+      "image": "",
+      "is_default": false,
+      "fields": [
+        {
+          "id": "title",
+          "key": "48660cee-880b-4b3a-9e78-189c6d33ed02",
+          "type": "string",
+          "format": "text",
+          "label": "العنوان",
+          "description": null,
+          "labelHTML": null,
+          "placeholder": "العنوان",
+          "icon": "sicon-format-text-alt",
+          "value": "جاهز تبدأ",
+          "multilanguage": true,
+          "required": false
+        },
+        {
+          "id": "title_gold",
+          "key": "8c6b0c80-88cc-4c48-9ad6-3632de3a2710",
+          "type": "string",
+          "format": "text",
+          "label": "السطر الذهبي",
+          "description": null,
+          "labelHTML": null,
+          "placeholder": "السطر الذهبي",
+          "icon": "sicon-format-text-alt",
+          "value": "إعلانك الجاي؟",
+          "multilanguage": true,
+          "required": false
+        },
+        {
+          "id": "btn_text",
+          "key": "f90da7fd-1009-459e-9d37-0aed9aecdaa6",
+          "type": "string",
+          "format": "text",
+          "label": "نص الزر",
+          "description": null,
+          "labelHTML": null,
+          "placeholder": "نص الزر",
+          "icon": "sicon-format-text-alt",
+          "value": "اطلب الحين عبر واتساب",
+          "multilanguage": true,
+          "required": false
+        },
+        {
+          "id": "btn_link",
+          "key": "09089e46-89b3-4c61-a197-1b4467727aeb",
+          "type": "string",
+          "format": "text",
+          "label": "رابط الزر",
+          "description": null,
+          "labelHTML": null,
+          "placeholder": "رابط الزر",
+          "icon": "sicon-format-text-alt",
+          "value": "https://wa.me/966553202932",
+          "multilanguage": false,
+          "required": false
         }
       ]
     }

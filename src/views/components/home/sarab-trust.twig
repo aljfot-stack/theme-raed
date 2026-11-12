@@ -1,10 +1,14 @@
 <section component-id="{{ componentId }}" data-testid="sarab-trust" class="sarab-trust">
-  <div class="container sarab-trust__grid">
-    {% for item in component.items %}
-      <div class="sarab-trust__item">
-        <strong>{{ item.value }}</strong>
-        <span>{{ item.label }}</span>
-      </div>
-    {% endfor %}
+  <div class="container">
+    {% if component.title %}<h2 class="sarab-trust__title">{{ component.title }}{% if component.title_gold %} <span class="sarab-gold">{{ component.title_gold }}</span>{% endif %}</h2>{% endif %}
+    <div class="sarab-trust__grid">
+      {% for item in component.items %}
+        <div class="sarab-trust__item">
+          <span class="sarab-trust__num">{{ '%02d'|format(loop.index) }}</span>
+          <strong>{{ item.value }}</strong>
+          <span>{{ item.label }}</span>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>

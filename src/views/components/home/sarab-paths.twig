@@ -1,17 +1,27 @@
 <section component-id="{{ componentId }}" data-testid="sarab-paths" class="sarab-section container">
   {% if component.title %}
-  <div class="sarab-section__head">
-    <h2>{{ component.title }}</h2>
+  <div class="sarab-section__head sarab-section__head--split">
+    <h2>{{ component.title }}{% if component.title_gold %} <span class="sarab-gold">{{ component.title_gold }}</span>{% endif %}</h2>
     {% if component.subtitle %}<p>{{ component.subtitle }}</p>{% endif %}
   </div>
   {% endif %}
   <div class="sarab-paths">
     {% for item in component.items %}
       <a class="sarab-path" href="{{ item.link ?: '#' }}">
-        {% if item.image %}<img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" width="96" height="96">{% endif %}
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.text }}</p>
-        <span class="sarab-path__more">{{ item.more ?: 'ابدأ' }} <i class="sicon-arrow-left rtl:inline-block ltr:hidden"></i></span>
+        <div class="sarab-path__media">
+          {% if item.image %}
+            <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
+          {% else %}
+            <span class="sarab-path__mark" aria-hidden="true">س</span>
+          {% endif %}
+        </div>
+        <div class="sarab-path__body">
+          <div class="sarab-path__text">
+            <h3>{{ item.title }}</h3>
+            {% if item.text %}<p>{{ item.text }}</p>{% endif %}
+          </div>
+          <span class="sarab-path__more">{{ item.more ?: 'ابدأ' }}</span>
+        </div>
       </a>
     {% endfor %}
   </div>
