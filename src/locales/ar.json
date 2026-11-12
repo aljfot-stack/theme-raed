@@ -29,6 +29,14 @@
       "loyalty_points": "نقاط الولاء",
       "gifts_title": "هدايا لا تفوت 🎉",
       "order_received": "شكرا لتسوقكم عبر متجرنا وجاري العمل على طلبكم"
+    },
+    "sarab": {
+      "delivery_label": "مدة التسليم",
+      "delivery_value": "من 3 إلى 14 يوم حسب الخدمة",
+      "revisions_label": "التعديلات",
+      "revisions_value": "تعديل واحد مجاني",
+      "receive_label": "طريقة الاستلام",
+      "receive_value": "رابط تحميل على Google Drive"
     }
   },
   "common": {

@@ -4,7 +4,6 @@
     <div class="sarab-trust__grid">
       {% for item in component.items %}
         <div class="sarab-trust__item">
-          <span class="sarab-trust__num">{{ '%02d'|format(loop.index) }}</span>
           <strong>{{ item.value }}</strong>
           <span>{{ item.label }}</span>
         </div>

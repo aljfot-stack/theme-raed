@@ -459,6 +459,14 @@
                     {% endif %}
                 </form>
 
+                {% if not product.is_require_shipping %}
+                    <dl class="sarab-facts" data-testid="sarab-service-facts">
+                        <div><dt>{{ trans('pages.sarab.delivery_label') }}</dt><dd>{{ trans('pages.sarab.delivery_value') }}</dd></div>
+                        <div><dt>{{ trans('pages.sarab.revisions_label') }}</dt><dd>{{ trans('pages.sarab.revisions_value') }}</dd></div>
+                        <div><dt>{{ trans('pages.sarab.receive_label') }}</dt><dd>{{ trans('pages.sarab.receive_value') }}</dd></div>
+                    </dl>
+                {% endif %}
+
                 {% hook 'product:single.description.end' %}
                 <salla-quick-order data-testid="store-product-quick-order" class="mt-5 md:-mb-2 block"></salla-quick-order>
             </div>

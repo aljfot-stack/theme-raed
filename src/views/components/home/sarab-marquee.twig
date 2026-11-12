@@ -5,7 +5,7 @@
         {% if item.image %}
           <img class="sarab-marquee__img" src="{{ item.image }}" alt="{{ round == 1 ? item.text : '' }}" loading="lazy" {% if round == 2 %}aria-hidden="true"{% endif %}>
         {% elseif item.text %}
-          <span class="sarab-marquee__word" {% if round == 2 %}aria-hidden="true"{% endif %}>{{ item.text }} ✦</span>
+          <span class="sarab-marquee__word" {% if round == 2 %}aria-hidden="true"{% endif %}>{{ item.text }}</span>
         {% endif %}
       {% endfor %}
     {% endfor %}

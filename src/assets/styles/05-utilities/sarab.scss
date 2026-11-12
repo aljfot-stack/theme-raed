@@ -30,6 +30,8 @@ body.sarab-dark {
   background: var(--sarab-bg);
   color: var(--sarab-text);
   font-family: var(--sarab-body);
+  line-height: 1.75;
+  letter-spacing: normal;
 
   h1, h2, h3, h4, .s-block__title h2 { font-family: var(--sarab-display); color: var(--sarab-text); }
   a:not([class*="btn"]):hover { color: var(--sarab-gold-hover); }
@@ -102,7 +104,7 @@ body.sarab-dark {
   &__pills { display: flex; flex-wrap: wrap; gap: .6rem; }
   &__title {
     margin: 0; font-family: var(--sarab-display); font-weight: 800; color: var(--sarab-text);
-    font-size: clamp(2.75rem, 8vw, 7rem); line-height: 1.08; letter-spacing: -.01em; max-width: 62rem;
+    font-size: clamp(2.75rem, 8vw, 7rem); line-height: 1.25; letter-spacing: normal; max-width: 62rem;
     .sarab-gold { display: block; }
   }
   &__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1.5rem; }
@@ -129,16 +131,16 @@ body.sarab-dark {
 @media (min-width: 768px) { .sarab-paths { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .sarab-path {
   display: flex; flex-direction: column; border: 1px solid var(--sarab-line); border-radius: 1.5rem; overflow: hidden;
-  background: var(--sarab-surface); color: var(--sarab-text); transition: transform .4s ease, border-color .4s ease;
+  background: var(--sarab-surface); color: var(--sarab-text); transition: border-color .4s ease;
   &__media { aspect-ratio: 3 / 2; background: var(--sarab-surface-2); display: flex; align-items: center; justify-content: center;
     img { width: 100%; height: 100%; object-fit: cover; } }
   &__mark { font-family: var(--sarab-display); font-size: 4.5rem; color: var(--sarab-gold); }
   &__body { padding: 1.5rem 1.75rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
   &__text { display: flex; flex-direction: column; gap: .4rem;
     h3 { margin: 0; font-family: var(--sarab-display); font-weight: 600; font-size: 1.4rem; color: var(--sarab-text); }
-    p { margin: 0; color: var(--sarab-muted); font-size: .95rem; line-height: 1.7; } }
+    p { margin: 0; color: var(--sarab-muted); font-size: 1rem; line-height: 1.8; } }
   &__more { color: var(--sarab-gold); font-weight: 600; border: 1px solid var(--sarab-gold-line); border-radius: 999px; padding: .55rem 1.1rem; white-space: nowrap; }
-  &:hover { transform: translateY(-6px); border-color: var(--sarab-gold); color: var(--sarab-text); }
+  &:hover { border-color: var(--sarab-gold); color: var(--sarab-text); }
 }
 
 /* ---------- Why / trust ---------- */
@@ -148,7 +150,6 @@ body.sarab-dark {
   &__item { display: flex; flex-direction: column; gap: .6rem; border-top: 2px solid var(--sarab-gold); padding-top: 1.5rem;
     strong { font-family: var(--sarab-display); font-weight: 600; font-size: 1.5rem; color: var(--sarab-text); }
     span { color: var(--sarab-muted); font-size: 1rem; line-height: 1.8; } }
-  &__num { font-family: var(--sarab-display); color: var(--sarab-gold) !important; font-size: .95rem !important; }
 }
 @media (min-width: 640px) { .sarab-trust__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1024px) { .sarab-trust { padding-block: 7.5rem; } .sarab-trust__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
@@ -158,7 +159,7 @@ body.sarab-dark {
 [dir="ltr"] .sarab-marquee__track { animation-name: sarabMarqueeLtr; }
 @keyframes sarabMarqueeLtr { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .sarab-marquee { overflow: hidden; padding-block: 2.25rem; border-block: 1px solid var(--sarab-line); background: var(--sarab-bg);
-  &__track { display: flex; align-items: center; gap: 1.25rem; width: max-content; animation: sarabMarquee 40s linear infinite; }
+  &__track { display: flex; align-items: center; gap: 1.25rem 3rem; width: max-content; animation: sarabMarquee 40s linear infinite; }
   &:hover &__track { animation-play-state: paused; }
   &__img { width: 18rem; height: 12rem; object-fit: cover; border-radius: 1rem; border: 1px solid var(--sarab-line); flex-shrink: 0; }
   &__word { font-family: var(--sarab-display); font-weight: 800; font-size: clamp(1.4rem, 3vw, 2rem); color: var(--sarab-gold); white-space: nowrap; padding-inline: 1.25rem; }
@@ -193,11 +194,11 @@ body.sarab-dark {
 /* ---------- Product cards ---------- */
 body.sarab-dark .s-product-card-entry {
   border-radius: 1.25rem; border: 1px solid var(--sarab-line); overflow: hidden;
-  transition: transform .4s ease, border-color .4s ease;
+  transition: border-color .4s ease;
   .s-product-card-content-title a, .s-product-card-content-title { color: var(--sarab-text); font-family: var(--sarab-display); font-weight: 600; }
   .s-product-card-price, .s-product-card-sale-price h4 { color: var(--sarab-gold) !important; }
   .s-product-card-image { background: var(--sarab-surface-2); }
-  &:hover { transform: translateY(-6px); border-color: var(--sarab-gold); }
+  &:hover { border-color: var(--sarab-gold); }
 }
 body.sarab-dark .s-block__title h2 { font-weight: 800; }
 
@@ -214,4 +215,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 @media (prefers-reduced-motion: reduce) {
   .sarab-rise, .sarab-marquee__track { animation: none !important; }
   .sarab-path, .sarab-btn, body.sarab-dark .s-product-card-entry { transition: none; transform: none !important; }
+}
+
+/* ---------- Service facts on product page ---------- */
+.sarab-facts { margin: 1.25rem 0 0; border-top: 1px solid var(--sarab-line);
+  div { display: flex; justify-content: space-between; gap: 1rem; padding-block: .85rem; border-bottom: 1px solid var(--sarab-line); font-size: 1rem; }
+  dt { color: var(--sarab-muted); }
+  dd { margin: 0; color: var(--sarab-text); text-align: end; }
 }

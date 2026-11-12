@@ -1160,7 +1160,7 @@
           "labelHTML": null,
           "placeholder": "سطر صغير فوق العنوان",
           "icon": "sicon-format-text-alt",
-          "value": "تصاميم وإعلانات بالذكاء الاصطناعي",
+          "value": "",
           "multilanguage": true,
           "required": false
         },
@@ -1174,7 +1174,7 @@
           "labelHTML": null,
           "placeholder": "سطر صغير ثاني",
           "icon": "sicon-format-text-alt",
-          "value": "عربي · English · اردو",
+          "value": "",
           "multilanguage": true,
           "required": false
         },
@@ -1216,7 +1216,7 @@
           "labelHTML": null,
           "placeholder": "وصف قصير",
           "icon": "sicon-format-text-alt",
-          "value": "إعلانات سينمائية، تصوير منتجات افتراضي، وهوية بصرية للمحلات التجارية والأفراد. كل شيء أونلاين، بدون شحن.",
+          "value": "إعلانات سينمائية، تصوير منتجات افتراضي، وهوية بصرية للمحلات والأفراد. بالعربي والإنجليزي والأردو، وكل شيء أونلاين بدون شحن.",
           "multilanguage": true,
           "required": false
         },
@@ -1258,7 +1258,7 @@
           "labelHTML": null,
           "placeholder": "نص الزر الثاني",
           "icon": "sicon-format-text-alt",
-          "value": "تواصل واتساب",
+          "value": "اطلب عبر واتساب",
           "multilanguage": true,
           "required": false
         },
@@ -1313,7 +1313,7 @@
           "labelHTML": null,
           "placeholder": "العنوان",
           "icon": "sicon-format-text-alt",
-          "value": "أعمال",
+          "value": "أعمال مميزة",
           "multilanguage": true,
           "required": false
         },
@@ -1327,7 +1327,7 @@
           "labelHTML": null,
           "placeholder": "كلمة ذهبية بعد العنوان",
           "icon": "sicon-format-text-alt",
-          "value": "مميزة",
+          "value": "",
           "multilanguage": true,
           "required": false
         },
@@ -1474,7 +1474,7 @@
           "labelHTML": null,
           "placeholder": "العنوان",
           "icon": "sicon-format-text-alt",
-          "value": "ليش",
+          "value": "ليش سراب؟",
           "multilanguage": true,
           "required": false
         },
@@ -1488,7 +1488,7 @@
           "labelHTML": null,
           "placeholder": "كلمة ذهبية بعد العنوان",
           "icon": "sicon-format-text-alt",
-          "value": "سراب؟",
+          "value": "",
           "multilanguage": true,
           "required": false
         },
@@ -1509,7 +1509,7 @@
             },
             {
               "items.value": "تسليم سريع",
-              "items.label": "حسب نوع الخدمة"
+              "items.label": "من 3 إلى 14 يوم حسب الخدمة"
             },
             {
               "items.value": "سعر واضح",
@@ -1717,11 +1717,23 @@
           "value": [
             {
               "items.question": "كم مدة التسليم؟",
-              "items.answer": "تختلف حسب الخدمة، وتُذكر في صفحة كل منتج."
+              "items.answer": "من 3 إلى 14 يوم حسب الخدمة، والمدة مكتوبة في صفحة كل خدمة."
             },
             {
-              "items.question": "هل أقدر أطلب تعديل؟",
-              "items.answer": "نعم، تواصل معنا بعد الاستلام وبنرتب التعديل."
+              "items.question": "أقدر أطلب تعديلات؟",
+              "items.answer": "كل خدمة فيها تعديل واحد مجاني بعد ما تستلم العمل."
+            },
+            {
+              "items.question": "كيف أستلم الشغل؟",
+              "items.answer": "نرسل لك رابط تحميل على Google Drive فيه الملفات النهائية جاهزة للنشر."
+            },
+            {
+              "items.question": "بأي لغة يكون الإعلان؟",
+              "items.answer": "بالعربي أو الإنجليزي أو الأردو، وتقدر تضيف لغة ثانية لنفس الإعلان بـ 149 ر.س."
+            },
+            {
+              "items.question": "كيف أطلب خدمة مو موجودة في المتجر؟",
+              "items.answer": "تواصل معنا على واتساب واشرح فكرتك، ونرسل لك السعر والمدة."
             }
           ],
           "fields": [
@@ -1781,7 +1793,7 @@
           "labelHTML": null,
           "placeholder": "العنوان",
           "icon": "sicon-format-text-alt",
-          "value": "جاهز تبدأ",
+          "value": "جاهز تبدأ إعلانك الجاي؟",
           "multilanguage": true,
           "required": false
         },
@@ -1795,7 +1807,7 @@
           "labelHTML": null,
           "placeholder": "السطر الذهبي",
           "icon": "sicon-format-text-alt",
-          "value": "إعلانك الجاي؟",
+          "value": "",
           "multilanguage": true,
           "required": false
         },
@@ -1809,7 +1821,7 @@
           "labelHTML": null,
           "placeholder": "نص الزر",
           "icon": "sicon-format-text-alt",
-          "value": "اطلب الحين عبر واتساب",
+          "value": "اطلب عبر واتساب",
           "multilanguage": true,
           "required": false
         },

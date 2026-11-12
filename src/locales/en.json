@@ -29,6 +29,14 @@
       "loyalty_points": "Loyalty points",
       "gifts_title": "Gifts you cannot miss 🎉",
       "order_received": "Thank you for shopping with us. We are working on your order."
+    },
+    "sarab": {
+      "delivery_label": "Delivery time",
+      "delivery_value": "3 to 14 days depending on the service",
+      "revisions_label": "Revisions",
+      "revisions_value": "One free revision",
+      "receive_label": "How you receive it",
+      "receive_value": "Google Drive download link"
     }
   },
   "common": {
