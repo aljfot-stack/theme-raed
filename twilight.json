@@ -280,6 +280,20 @@
       "required": false,
       "value": false,
       "selected": false
+    },
+    {
+      "id": "sarab_whatsapp",
+      "key": "07ef82d3-768a-4689-94c4-573f7dc6f374",
+      "type": "string",
+      "format": "text",
+      "label": "رقم واتساب للطلب (بدون + أو مسافات)",
+      "description": "يظهر كزر ثابت في كل صفحات المتجر. اتركه فاضي لإخفاء الزر.",
+      "labelHTML": null,
+      "placeholder": "966553202932",
+      "icon": "sicon-whatsapp",
+      "value": "966553202932",
+      "multilanguage": false,
+      "required": false
     }
   ],
   "components": [
@@ -1286,6 +1300,20 @@
           "labelHTML": null,
           "placeholder": "صورة جانبية (اختياري)",
           "icon": "sicon-image",
+          "value": null,
+          "multilanguage": false,
+          "required": false
+        },
+        {
+          "id": "video",
+          "key": "f898c601-63fe-447c-a604-a58e52798bb6",
+          "type": "string",
+          "format": "text",
+          "label": "فيديو خلفية الواجهة (رابط mp4، اختياري)",
+          "description": "يشتغل بدون صوت ويتكرر. الصورة تظهر قبل ما يحمّل الفيديو.",
+          "labelHTML": null,
+          "placeholder": "https://.../video.mp4",
+          "icon": "sicon-video",
           "value": null,
           "multilanguage": false,
           "required": false

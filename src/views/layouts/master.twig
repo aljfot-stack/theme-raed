@@ -119,6 +119,14 @@
     {% component 'footer.footer' %}
 </div>
 {% hook 'body:end' %}
+{% set sarab_wa = theme.settings.get('sarab_whatsapp', '966553202932') %}
+{% if sarab_wa %}
+    {% set sarab_wa_label = language.code == 'ur' ? 'واٹس ایپ پر آرڈر کریں' : (language.code == 'en' ? 'Order on WhatsApp' : 'اطلب عبر واتساب') %}
+    <a class="sarab-wa{{ page.slug == 'product.single' ? ' sarab-wa--product' : '' }}" href="https://wa.me/{{ sarab_wa }}" target="_blank" rel="noopener" data-testid="sarab-whatsapp">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.4L3 20.5l1.6-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg>
+        <span class="sarab-wa__label">{{ sarab_wa_label }}</span>
+    </a>
+{% endif %}
 {% if theme.settings.get('enable_add_product_toast', true) %}
     <salla-add-product-toast data-testid="store-add-product-toast"></salla-add-product-toast>
 {% endif %}

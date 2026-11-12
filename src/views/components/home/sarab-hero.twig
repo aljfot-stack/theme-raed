@@ -1,5 +1,8 @@
-<section component-id="{{ componentId }}" data-testid="sarab-hero" class="sarab-hero{% if component.image %} has-image{% endif %}">
-  {% if component.image %}
+<section component-id="{{ componentId }}" data-testid="sarab-hero" class="sarab-hero{% if component.image or component.video %} has-image{% endif %}">
+  {% if component.video %}
+    <video class="sarab-hero__bg" src="{{ component.video }}" {% if component.image %}poster="{{ component.image }}"{% endif %} autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+    <span class="sarab-hero__scrim" aria-hidden="true"></span>
+  {% elseif component.image %}
     <img class="sarab-hero__bg" src="{{ component.image }}" alt="" loading="eager" fetchpriority="high">
     <span class="sarab-hero__scrim" aria-hidden="true"></span>
   {% endif %}

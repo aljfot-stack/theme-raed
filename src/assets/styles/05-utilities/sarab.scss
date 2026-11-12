@@ -223,3 +223,20 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   dt { color: var(--sarab-muted); }
   dd { margin: 0; color: var(--sarab-text); text-align: end; }
 }
+
+/* ---------- WhatsApp order button ---------- */
+.sarab-wa {
+  position: fixed; z-index: 40; inset-block-end: 1.25rem; inset-inline-start: 1.25rem;
+  display: inline-flex; align-items: center; gap: .6rem; min-height: 3.25rem; padding: .8rem 1.4rem;
+  border-radius: 999px; background: var(--sarab-gold); color: var(--sarab-bg); font-weight: 600; font-size: 1rem;
+  box-shadow: 0 0 0 1px rgba(11, 10, 8, .4);
+  &:hover, &:focus-visible { background: var(--sarab-gold-hover); color: var(--sarab-bg); }
+}
+@media (max-width: 767px) {
+  /* full-width order bar on phones, except product pages where the buy bar lives */
+  .sarab-wa { inset-inline: 0; inset-block-end: 0; border-radius: 0; justify-content: center; min-height: 3.5rem;
+    padding-block-end: calc(.8rem + env(safe-area-inset-bottom)); }
+  body:has(.sarab-wa:not(.sarab-wa--product)) .store-footer { padding-bottom: 3.5rem; }
+  .sarab-wa--product { inset-inline: auto; inset-inline-start: 1rem; inset-block-end: 5.5rem; border-radius: 999px; padding: .85rem; }
+  .sarab-wa--product .sarab-wa__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+}

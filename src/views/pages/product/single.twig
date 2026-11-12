@@ -461,9 +461,15 @@
 
                 {% if not product.is_require_shipping %}
                     <dl class="sarab-facts" data-testid="sarab-service-facts">
+                    {% if language.code == 'ur' %}
+                        <div><dt>ڈیلیوری کا وقت</dt><dd>سروس کے مطابق 3 سے 14 دن</dd></div>
+                        <div><dt>ترامیم</dt><dd>ایک مفت ترمیم</dd></div>
+                        <div><dt>وصولی کا طریقہ</dt><dd>Google Drive ڈاؤن لوڈ لنک</dd></div>
+                    {% else %}
                         <div><dt>{{ trans('pages.sarab.delivery_label') }}</dt><dd>{{ trans('pages.sarab.delivery_value') }}</dd></div>
                         <div><dt>{{ trans('pages.sarab.revisions_label') }}</dt><dd>{{ trans('pages.sarab.revisions_value') }}</dd></div>
                         <div><dt>{{ trans('pages.sarab.receive_label') }}</dt><dd>{{ trans('pages.sarab.receive_value') }}</dd></div>
+                    {% endif %}
                     </dl>
                 {% endif %}
 
